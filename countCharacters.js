@@ -1,8 +1,8 @@
 function toObject(str) {
   let Counts = {};
   for (char of str) {
-    char = char.toLowerCase();
     if (isAlphaNumeric(char)) {
+      char = char.toLowerCase();
       Counts[char] = ++Counts[char] || 1;
     }
   }
